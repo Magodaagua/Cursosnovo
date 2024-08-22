@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kanban Board</title>
+    <style>
+        .kanban-board {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+        }
+        .kanban-column {
+            width: 30%;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            min-height: 400px;
+        }
+        .kanban-item {
+            background-color: #fff;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            cursor: move;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.14.0/Sortable.min.js"></script>
+</head>
+<body>
+    <div class="kanban-board">
+        <div class="kanban-column" id="todo">
+            <h2>To Do</h2>
+            <div class="kanban-item">Item 1</div>
+            <div class="kanban-item">Item 2</div>
+        </div>
+        <div class="kanban-column" id="in-progress">
+            <h2>In Progress</h2>
+        </div>
+        <div class="kanban-column" id="done">
+            <h2>Done</h2>
+        </div>
+    </div>
+
+    <script>
+        $(function() {
+            var kanbanColumns = document.querySelectorAll('.kanban-column');
+            kanbanColumns.forEach(function(column) {
+                new Sortable(column, {
+                    group: 'shared',
+                    animation: 150,
+                    onEnd: function(evt) {
+                        console.log("Movendo item: " + evt.item.innerText + " para " + evt.to.id);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

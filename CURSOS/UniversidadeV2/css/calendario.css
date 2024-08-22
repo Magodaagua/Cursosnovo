@@ -1,0 +1,251 @@
+.calendar-container {
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.botaovoltarteste{
+    margin-top: 20px;
+    width: 99%;
+    height: 40px;
+    text-align: center;
+    /*border: 1px solid blue;*/
+}
+
+.botaovoltarteste button{
+    width: 3%;
+    cursor: pointer;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.botaovoltarteste img{
+    width: 100%;
+    height: 100%;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1500px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.calendar-header .month-year {
+    font-size: 1.5em;
+    font-weight: bold;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.calendar-header button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#kanban-calendar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.week-days {
+    display: flex;
+    width: 100%;
+}
+
+.week-day {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+.kanban-days {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.kanban-week {
+    display: flex;
+    width: 100%;
+}
+
+.day, .empty {
+    flex: 1;
+    border: 1px solid #ddd;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.day.today {
+    background-color: #007bff;
+    color: white;
+}
+
+.day-number {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+.reminders {
+    margin-top: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.reminder {
+    background-color: #eee;
+    color: black;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.reminder button {
+    margin-top: 5px;
+    padding: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    background-color: #007bff;
+    color: white;
+}
+
+.reminder button:hover {
+    background-color: #0056b3;
+}
+
+.reminder button.delete-reminder {
+    background-color: #dc3545;
+}
+
+.reminder button.delete-reminder:hover {
+    background-color: #c82333;
+}
+
+.day-content {
+    max-width: 100%;
+    word-wrap: break-word;
+    word-break: break-all; /* Força a quebra de palavras */
+}
+
+.modal-overlay-calendario {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; /* Z-index alto para ficar sobre o conteúdo */
+}
+
+.modal-calendario {
+    background-color: white;
+    padding: 20px;
+    max-width: 80%;
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000; /* Z-index maior que o overlay */
+}
+
+.modal-calendario.active,
+.modal-overlay-calendario.active {
+    display: flex;
+}
+
+.popup-content-calendario {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.modal-calendario h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.modal-calendario form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-calendario form div {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.modal-calendario label {
+    font-weight: bold;
+}
+
+.modal-calendario textarea {
+    height: 100px;
+    resize: vertical;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.modal-calendario button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    margin-right: 5px; /* Adiciona espaçamento entre os botões */
+}
+
+.modal-calendario button#delete-button-popup-calendario {
+    background-color: #dc3545; /* Cor vermelha para o botão de excluir */
+}
+
+.modal-calendario button#delete-button-popup-calendario:hover {
+    background-color: #c82333; /* Cor mais escura ao passar o mouse */
+}
+
+.modal-calendario button:hover {
+    background-color: #0056b3;
+}
+

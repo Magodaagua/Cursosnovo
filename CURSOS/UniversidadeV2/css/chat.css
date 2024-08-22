@@ -1,0 +1,478 @@
+.iconeChat {
+    width: 100px;
+    height: 55px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    transition: width 1s; 
+    z-index: 999;
+    margin: 20px;
+    padding: 5px;
+    padding-top: 5px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    color: var(--branco);
+    background-color: var(--vermelho-cop);
+}
+
+.iconeChat img {
+    width: 40%;
+    margin-right: 10px;
+}
+
+#containerFormChat {
+    width: 500px;
+    height: 600px;
+    bottom: 100px;
+    position: fixed;
+    display: none;
+    border-radius: 30px 30px 30px 30px;
+    right: 20px;
+    z-index: 999;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.conteudoChat {
+    display: block;
+    padding: 10px;
+    height: 88%;
+    bottom: 0;
+}
+
+#listaContatos {
+    max-height: 80%;
+    overflow-y: auto;
+    border: 1px solid black;
+    border-radius: 20px 0 0 20px;
+}
+
+.contatoimagem {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    /*border-radius: 50%;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.contatoimagem img {
+    width: 100%;
+    height: 100%;
+    border-radius: 40%;
+    object-fit: cover;
+}
+
+.contato {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 5px; /* Adiciona espaço entre os contatos */
+    border-bottom: 1px solid #ddd;
+}
+
+.contato:hover {
+    background-color: #d3d3d3; /* Cinza claro */
+}
+
+.contato_info {
+    flex-grow: 1;
+}
+
+.juntadonamesmalinha{
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.contato_nome, .contato_dep, .contato_ultima_mensagem {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 2px 0;
+}
+
+.partedebaixo{
+    display: flex;
+    align-items: space-between;
+    padding: 10px;
+}
+
+.contato_ultima_mensagem {
+    margin-left: auto;
+    padding-left: 10px;
+    color: #999;
+    font-size: 0.8em;
+}
+
+.status-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: red; /* Cor padrão, será sobrescrita no PHP */
+}
+
+#menulistacontatos{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 20px;
+    margin-bottom: 10px;
+    /*border: 1px solid purple;*/
+}
+
+#menulistacontatos div {
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#menulistacontatos .selected {
+    border-bottom: 2px solid #007bff;
+}
+
+#botaoVoltar{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 96%;
+    height: 6%;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+
+#opcaoesquerdalistacontatos{
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 100px;
+    height:30px;
+    cursor: pointer;
+    float: left;
+    /*border: 1px solid blue;*/
+}
+
+#opcaodireitalistacontatos{
+    margin-top: 10px;
+    margin-right: 20px;
+    width: 60px;
+    height:30px;
+    cursor: pointer;
+    float: right;
+    /*border: 1px solid purple;*/
+}
+
+/*-----chat em si ------*/
+
+#chatArea{
+    width: 100%;
+    height: 85%;
+    /*border: 1px solid blue;*/
+}
+
+.topolistacontatos{
+    width: 100%;
+    height: 13%;
+    display: flex;
+    justify-content: space-between;
+    /*border: 1px solid green;*/
+}
+
+.imagemtopolistacontatos{
+    width:50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 40%;
+    border: 1px solid black;
+}
+
+.imagemtopolistacontatos img{
+    width:100%;
+    height:100%;
+    border-radius: 38%;
+}
+
+.topomensagemlistacontatos{
+    margin-top: 10px;
+    width: 60%;
+    height: 50px;
+    text-align: center;
+    font-size: 22px;
+    /*border: 1px solid black;*/
+}
+
+.topoxlistacontatos{
+    width:40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.topoxlistacontatos img{
+    width:100%;
+    height:100%;
+    border-radius: 100%;
+}
+
+.topomensagens{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: flex-start;
+    /*border: 1px solid red;*/
+}
+
+.imagemdocontato{
+    width: 50px;
+    height: 100%;
+    margin-left: 20px;
+    /*border: 1px solid black;*/
+    /*border-radius: 100%;*/
+}
+
+.imagemdocontato img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.containerNomeDep{
+    width: 60%;
+    height: 100%;
+    margin-left: 10px;
+    display: flex;
+    justify-content: flex-start;
+    /*border: 1px solid green;*/
+}
+
+.nomedocontato{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.depdocontato{
+    margin-left: 10px;
+}
+
+.cantodireito{
+    width: 10%;
+    height: 100%;
+    /*border: 1px solid black;*/
+}
+
+.clipes{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.attention-button{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.attention-button img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.mensagens{
+    margin-top: 20px;
+    width: 99%;
+    height: 72%;
+    border: 3px solid black;
+    border-radius: 20px 0 0 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.mensagem {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 60%;
+    word-wrap: break-word;
+    display: inline-block;
+    position: relative;
+}
+
+.mensagem img {
+    max-width: 100%;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.mensagem-user {
+    background-color: #DCF8C6; /* verde claro */
+    align-self: flex-end;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+    max-width: 80%;
+    height: auto;
+    word-wrap: break-word;
+}
+
+.mensagem-contato {
+    background-color: #ECECEC; /* cinza claro */
+    align-self: flex-start;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    max-width: 80%;
+    height: auto;
+    word-wrap: break-word;
+}
+
+.mensagem-user div{
+    max-width: 300px;
+    height: auto;
+}
+
+.mensagem-user img{
+    width: 300px;
+    height: 200px;
+}
+
+.mensagem-user audio{
+    width: 300px;
+    height: 60px;
+}
+
+.mensagem-user video{
+    width: 300px;
+    height: 200px;
+}
+
+.mensagem-data {
+    display: block;
+    font-size: 0.8em;
+    color: #666;
+    margin-top: 5px;
+    text-align: right;
+}
+
+.escrevermensagem{
+    width: 100%;
+    height: 10%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    /*border: 1px solid red;*/
+}
+
+.campoparaescrever{
+    width: 80%;
+    height: 40px;
+    /*border: 1px solid green;*/
+}
+
+.mensagemtexto{
+    width: 98%;
+    height: 80%;
+    border-radius: 20px;
+}
+
+/* Esconde o campo de entrada de arquivo padrão */
+#fileupload {
+    display: none;
+}
+
+.clipebutton {
+    width: 40px; /* Ajuste a largura conforme necessário */
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%; /* Ajuste para um círculo perfeito */
+    border: 1px solid black;
+}
+
+.clipebutton img {
+    width: 80%; /* Ajuste para centralizar melhor */
+    height: 80%;
+}
+
+.clipebutton:hover {
+    background-color: #A9A9A9; /* Cinza escuro no hover */
+}
+
+#uploadPopup, #filePreview {
+    z-index: 10001; /* Exemplo de valor mais alto */
+}
+
+.relative-parent {
+    position: relative;
+}
+
+#filePreview {
+    position: absolute;
+    top: 310px; /* 15px mais para baixo do que antes */
+    left: 280px; /* 5px mais para a direita do que antes */
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    z-index: 10001;
+    display: none;
+}
+
+#fecharPreview {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#previewImage {
+    max-width: 100%;
+    max-height: 200px;
+}
+
+#fileName {
+    font-size: 14px;
+    color: #333;
+}
+
+.botaoenviar {
+    width: 40px; /* Ajuste a largura conforme necessário */
+    height: 40px;
+    border-radius: 50%; /* Ajuste para um círculo perfeito */
+    border: 1px solid black;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.botaoenviar img {
+    width: 80%; /* Ajuste para centralizar melhor */
+    height: 80%;
+}
+
+.botaoenviar:hover {
+    background-color: #A9A9A9; /* Cinza escuro no hover */
+}

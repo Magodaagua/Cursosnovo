@@ -1,0 +1,34 @@
+Como criar a paginação com PHP e JavaScript
+- https://www.youtube.com/watch?v=H8revJTlhdo&list=PLmY5AEiqDWwAnRZ13GdtiSF9yAmoT5LL_&index=2
+
+Como usar github
+- https://www.youtube.com/watch?v=yWNqp8wSk8M&list=PLmY5AEiqDWwB9ACwhiefAyCq60Qa5ZwnK&ab_channel=Celke
+
+Como listar as aulas do módulo com PHP
+- https://www.youtube.com/watch?v=ZeLJy1Cmr2k&list=PLmY5AEiqDWwCK58zFD05282nf-xgTA1iI&ab_channel=Celke
+
+Como apagar foto com PHP no servidor
+- https://www.youtube.com/watch?v=cbO9YIN71KU&list=PLmY5AEiqDWwAhkmWs4XBT-oGcXfEaHLJW&ab_channel=Celke
+
+Como criar formulário upload de foto, como imprimir a imagem e como liberar para download o arquivo
+- https://www.youtube.com/watch?v=-dYqcEITsJI&list=PLmY5AEiqDWwA8c-iI10Co7RiwiJ4n40Od&ab_channel=Celke
+
+Como criar o formulário com campo checkbox com PHP
+- https://www.youtube.com/watch?v=hys6_jTG2FY&list=PLmY5AEiqDWwBnPfz82IcaYcxSFtUJpPJ_&ab_channel=Celke
+
+Como pesquisar com dois campos select categoria e subcategoria
+- https://www.youtube.com/watch?v=UeEAjA-BPtY&list=PLmY5AEiqDWwAJ9Buz-O4cJjvd6Nv9Ab9R&ab_channel=Celke
+
+Como criar site scroll com menu flutuante
+- https://www.youtube.com/watch?v=Hm96kmOz2Zo&list=PLmY5AEiqDWwDmROlv6-IO5OfnHQIQ6czr&ab_channel=Celke
+
+Como usar o FullCalendar e listar eventos do Banco de Dados
+-https://youtu.be/JfAgl6CGg2Q?si=cFBvP0-bYIj0Orka
+
+Carregar conteúdo fora do carousel conforme o slide do carousel apresentado
+-https://youtu.be/lxVhRbZnpNw?si=y5_5GB28IVaVG0hs
+
+
+                                            *Ideias*
+- Controlar as contas que podem acessar cada curso.
+- Donation

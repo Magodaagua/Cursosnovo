@@ -1,0 +1,19 @@
+Começou o git
+-> git init
+-> git status
+
+Colocar tudo
+-> git add --all
+
+Comitar
+-> git commit -m "coloque um comentário aqui"
+
+Adicionar ao servidor
+-> git remote add origin https://github.com/Magodaagua/Site_Treinamento_github.git
+-> git branch -M main
+-> git push -u origin main
+
+Para limpar
+-> clear
+
+
